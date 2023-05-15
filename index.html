@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientific Calculator</title>
+	<script type="text/javascript">
+		function calculate() {
+			var input = document.getElementById("input").value;
+			var output = eval(input);
+			document.getElementById("output").value = output;
+		}
+
+		function sine() {
+			var input = document.getElementById("input").value;
+			var output = Math.sin(input);
+			document.getElementById("output").value = output;
+		}
+
+		function cosine() {
+			var input = document.getElementById("input").value;
+			var output = Math.cos(input);
+			document.getElementById("output").value = output;
+		}
+
+		function tangent() {
+			var input = document.getElementById("input").value;
+			var output = Math.tan(input);
+			document.getElementById("output").value = output;
+		}
+
+		function logarithm() {
+			var input = document.getElementById("input").value;
+			var output = Math.log10(input);
+			document.getElementById("output").value = output;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input"><br><br>
+	<input type="text" id="output"><br><br>
+	<button onclick="calculate()">Calculate</button>
+	<button onclick="sine()">Sin</button>
+	<button onclick="cosine()">Cos</button>
+	<button onclick="tangent()">Tan</button>
+	<button onclick="logarithm()">Log</button>
+</body>
+</html>
